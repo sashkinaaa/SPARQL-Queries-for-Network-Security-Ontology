@@ -1,0 +1,71 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sec: <http://www.semanticweb.org/NetworkSecurity#>
+
+1. All Network Security Systems (NSS)
+--------------------------------------------------------------------
+SELECT *
+WHERE {?nss rdf:type sec:Network_Security_System . }
+
+2. Inspection Systems by Groups
+--------------------------------------------------------------------
+SELECT ?group ?individual
+WHERE {?group  rdfs:subClassOf sec:Inspection . ?group ^rdf:type ?individual }
+
+3. NSS with E-mail Filter
+-------------------------------------------------------------------
+SELECT ?nss
+WHERE {?nss sec:hasInspection ?emailfilter . ?emailfilter rdf:type sec:E-mail_Filter }
+
+4. Login Systems by Type
+------------------------------------------------------------------
+SELECT ?type ?ls
+WHERE {?type  rdfs:subClassOf sec:Login_System . ?type ^rdf:type ?ls }
+
+5. NSS with Fingerprint Recognition
+-------------------------------------------------------------------
+SELECT ?nss
+WHERE {?nss sec:hasLogin_System sec:Fingerprint_Recognition}
+
+6. NSS with Two-factor_Authentication
+------------------------------------------------------------------
+SELECT ?nss
+WHERE {?nss sec:hasLogin_System ?y . ?y rdf:type sec:Two-factor_Authentication}
+
+7. NSS with oneLogin (subclass of single sign-on)
+------------------------------------------------------------------
+SELECT ?nss
+WHERE {?nss sec:hasLogin_System sec:OneLogin . }
+
+8. Algorithms by type
+------------------------------------------------------------------
+SELECT ?type ?algo
+WHERE {?type  rdfs:subClassOf sec:Encryption_And_Cryptography . ?type ^rdf:type ?algo }
+
+9. NSS with encryption
+------------------------------------------------------------------
+SELECT ?nss
+WHERE {?nss sec:hasEncryption_And_Cryptography ?algo . ?algo rdf:type sec:Encryption_Algorithms }
+
+10. NSS using MD5 algorithm
+------------------------------------------------------------------
+SELECT ?nss
+WHERE {?nss sec:hasEncryption_And_Cryptography sec:MD5 }
+
+11. The 2 most expensive NSS
+-----------------------------------------------------------------
+SELECT ?nss ?p
+WHERE {?nss sec:hasPrice ?p } ORDER BY DESC (?p) LIMIT 2
+
+12. NSS with price less than 500
+-----------------------------------------------------------------
+SELECT *
+WHERE {?nss sec:hasPrice ?p FILTER(?p < 500)} 
+
+13. NSS with owner Bill Gates
+----------------------------------------------------------------
+SELECT ?nss
+WHERE {?nss sec:hasOwner ?ow FILTER(?ow = "BillGates")}
+
