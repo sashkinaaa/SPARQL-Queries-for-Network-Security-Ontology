@@ -1,0 +1,727 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/NetworkSecurity"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/NetworkSecurity">
+    <Prefix name="" IRI="http://www.semanticweb.org/NetworkSecurity#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="#Windows_Firewall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Single_Sign-on_System"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Position-dependent_Checksum_Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInspection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inspection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Google"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Iris_Recognition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cisco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MS_Mail_Filter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fingerprint_Recognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biometric_Authentication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Google_Authenticator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLogin_System_Of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDeveloper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gmail_Filter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rabin_Signature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Signature_Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEncryption_And_Cryptography_Of"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Firewall_Software"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Avast_Antivirus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Checksum_Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MD5"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLogin_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network_Security_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#E-mail_Filter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInventor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Microsoft_Two-Step_Verification"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rapid_Digital_Signature_Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anti-virus_Software"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SolarWinds_Intrusion_Detection_System"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVendor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Security_Essentials"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intrusion_Detection_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Encryption_And_Cryptography"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Microsoft_Azure_Active_Directory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInspectionOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cisco_IDS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OneLogin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Modular_sum_Checksum_Algorithm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Encryption_Algorithms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Login_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Two-factor_Authentication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOwner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cisco_Firewall"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Anti-virus_Software"/>
+        <Class IRI="#Inspection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biometric_Authentication"/>
+        <Class IRI="#Login_System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Checksum_Algorithm"/>
+        <Class IRI="#Encryption_And_Cryptography"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#E-mail_Filter"/>
+        <Class IRI="#Inspection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Encryption_Algorithms"/>
+        <Class IRI="#Encryption_And_Cryptography"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Encryption_And_Cryptography"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isEncryption_And_Cryptography_Of"/>
+            <Class IRI="#Network_Security_System"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Encryption_And_Cryptography"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasInventor"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Firewall_Software"/>
+        <Class IRI="#Inspection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inspection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isInspectionOf"/>
+            <Class IRI="#Network_Security_System"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inspection"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasVendor"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intrusion_Detection_System"/>
+        <Class IRI="#Inspection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Login_System"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLogin_System_Of"/>
+            <Class IRI="#Network_Security_System"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Login_System"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasDeveloper"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network_Security_System"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+            <Class IRI="#Encryption_And_Cryptography"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network_Security_System"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasInspection"/>
+            <Class IRI="#Inspection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network_Security_System"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLogin_System"/>
+            <Class IRI="#Login_System"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network_Security_System"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasOwner"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network_Security_System"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasPrice"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Signature_Algorithm"/>
+        <Class IRI="#Encryption_And_Cryptography"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Single_Sign-on_System"/>
+        <Class IRI="#Login_System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Two-factor_Authentication"/>
+        <Class IRI="#Login_System"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Encryption_Algorithms"/>
+        <NamedIndividual IRI="#AES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Anti-virus_Software"/>
+        <NamedIndividual IRI="#Avast_Antivirus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Network_Security_System"/>
+        <NamedIndividual IRI="#Cisco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Firewall_Software"/>
+        <NamedIndividual IRI="#Cisco_Firewall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Intrusion_Detection_System"/>
+        <NamedIndividual IRI="#Cisco_IDS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Biometric_Authentication"/>
+        <NamedIndividual IRI="#Fingerprint_Recognition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#E-mail_Filter"/>
+        <NamedIndividual IRI="#Gmail_Filter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Network_Security_System"/>
+        <NamedIndividual IRI="#Google"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Two-factor_Authentication"/>
+        <NamedIndividual IRI="#Google_Authenticator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Biometric_Authentication"/>
+        <NamedIndividual IRI="#Iris_Recognition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Encryption_Algorithms"/>
+        <NamedIndividual IRI="#MD5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#E-mail_Filter"/>
+        <NamedIndividual IRI="#MS_Mail_Filter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Single_Sign-on_System"/>
+        <NamedIndividual IRI="#Microsoft_Azure_Active_Directory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Two-factor_Authentication"/>
+        <NamedIndividual IRI="#Microsoft_Two-Step_Verification"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Network_Security_System"/>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Checksum_Algorithm"/>
+        <NamedIndividual IRI="#Modular_sum_Checksum_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Single_Sign-on_System"/>
+        <NamedIndividual IRI="#OneLogin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Checksum_Algorithm"/>
+        <NamedIndividual IRI="#Position-dependent_Checksum_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signature_Algorithm"/>
+        <NamedIndividual IRI="#Rabin_Signature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Signature_Algorithm"/>
+        <NamedIndividual IRI="#Rapid_Digital_Signature_Algorithm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Anti-virus_Software"/>
+        <NamedIndividual IRI="#Security_Essentials"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Intrusion_Detection_System"/>
+        <NamedIndividual IRI="#SolarWinds_Intrusion_Detection_System"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Firewall_Software"/>
+        <NamedIndividual IRI="#Windows_Firewall"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#AES"/>
+        <NamedIndividual IRI="#MD5"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Avast_Antivirus"/>
+        <NamedIndividual IRI="#Security_Essentials"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Cisco"/>
+        <NamedIndividual IRI="#Google"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Cisco"/>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Cisco_Firewall"/>
+        <NamedIndividual IRI="#Windows_Firewall"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Cisco_IDS"/>
+        <NamedIndividual IRI="#SolarWinds_Intrusion_Detection_System"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Fingerprint_Recognition"/>
+        <NamedIndividual IRI="#Iris_Recognition"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Gmail_Filter"/>
+        <NamedIndividual IRI="#MS_Mail_Filter"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Google_Authenticator"/>
+        <NamedIndividual IRI="#Microsoft_Two-Step_Verification"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Microsoft_Azure_Active_Directory"/>
+        <NamedIndividual IRI="#OneLogin"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Modular_sum_Checksum_Algorithm"/>
+        <NamedIndividual IRI="#Position-dependent_Checksum_Algorithm"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Rabin_Signature"/>
+        <NamedIndividual IRI="#Rapid_Digital_Signature_Algorithm"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+        <NamedIndividual IRI="#Cisco"/>
+        <NamedIndividual IRI="#MD5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+        <NamedIndividual IRI="#Cisco"/>
+        <NamedIndividual IRI="#Position-dependent_Checksum_Algorithm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+        <NamedIndividual IRI="#Cisco"/>
+        <NamedIndividual IRI="#Rapid_Digital_Signature_Algorithm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInspection"/>
+        <NamedIndividual IRI="#Cisco"/>
+        <NamedIndividual IRI="#Avast_Antivirus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInspection"/>
+        <NamedIndividual IRI="#Cisco"/>
+        <NamedIndividual IRI="#Cisco_Firewall"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInspection"/>
+        <NamedIndividual IRI="#Cisco"/>
+        <NamedIndividual IRI="#Cisco_IDS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLogin_System"/>
+        <NamedIndividual IRI="#Cisco"/>
+        <NamedIndividual IRI="#OneLogin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#Modular_sum_Checksum_Algorithm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#Rabin_Signature"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInspection"/>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#Gmail_Filter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInspection"/>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#SolarWinds_Intrusion_Detection_System"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLogin_System"/>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#Google_Authenticator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLogin_System"/>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#Iris_Recognition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLogin_System"/>
+        <NamedIndividual IRI="#Google"/>
+        <NamedIndividual IRI="#OneLogin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+        <NamedIndividual IRI="#AES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInspection"/>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+        <NamedIndividual IRI="#MS_Mail_Filter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInspection"/>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+        <NamedIndividual IRI="#Security_Essentials"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInspection"/>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+        <NamedIndividual IRI="#Windows_Firewall"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLogin_System"/>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+        <NamedIndividual IRI="#Fingerprint_Recognition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLogin_System"/>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+        <NamedIndividual IRI="#Microsoft_Azure_Active_Directory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLogin_System"/>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+        <NamedIndividual IRI="#Microsoft_Two-Step_Verification"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInspection"/>
+        <NamedIndividual IRI="#Security_Essentials"/>
+        <NamedIndividual IRI="#Avast_Antivirus"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOwner"/>
+        <NamedIndividual IRI="#Cisco"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Leonard Bosack</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Cisco"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">10000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOwner"/>
+        <NamedIndividual IRI="#Google"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Larry Page</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Google"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOwner"/>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">BillGates</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Microsoft_Windows_10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">200.0</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInspection"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLogin_System"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isEncryption_And_Cryptography_Of"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInspectionOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLogin_System_Of"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+        <ObjectProperty IRI="#isEncryption_And_Cryptography_Of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInspection"/>
+        <ObjectProperty IRI="#isInspectionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLogin_System"/>
+        <ObjectProperty IRI="#isLogin_System_Of"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+        <Class IRI="#Network_Security_System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInspection"/>
+        <Class IRI="#Network_Security_System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLogin_System"/>
+        <Class IRI="#Network_Security_System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEncryption_And_Cryptography_Of"/>
+        <Class IRI="#Encryption_And_Cryptography"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInspectionOf"/>
+        <Class IRI="#Inspection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLogin_System_Of"/>
+        <Class IRI="#Login_System"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEncryption_And_Cryptography"/>
+        <Class IRI="#Encryption_And_Cryptography"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInspection"/>
+        <Class IRI="#Inspection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLogin_System"/>
+        <Class IRI="#Login_System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEncryption_And_Cryptography_Of"/>
+        <Class IRI="#Network_Security_System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInspectionOf"/>
+        <Class IRI="#Network_Security_System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLogin_System_Of"/>
+        <Class IRI="#Network_Security_System"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDeveloper"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasInventor"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasOwner"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasPrice"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasVendor"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDeveloper"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasInventor"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasOwner"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasPrice"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasVendor"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDeveloper"/>
+        <Class IRI="#Login_System"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasInventor"/>
+        <Class IRI="#Encryption_And_Cryptography"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOwner"/>
+        <Class IRI="#Network_Security_System"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPrice"/>
+        <Class IRI="#Network_Security_System"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVendor"/>
+        <Class IRI="#Inspection"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDeveloper"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasInventor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOwner"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrice"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVendor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

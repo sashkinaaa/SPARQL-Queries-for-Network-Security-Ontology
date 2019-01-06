@@ -1,0 +1,666 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/NetworkSecurity#"
+     xml:base="http://www.semanticweb.org/NetworkSecurity"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/NetworkSecurity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#hasEncryption_And_Cryptography -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/NetworkSecurity#hasEncryption_And_Cryptography">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#isEncryption_And_Cryptography_Of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/NetworkSecurity#Encryption_And_Cryptography"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#hasInspection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/NetworkSecurity#hasInspection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#isInspectionOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/NetworkSecurity#Inspection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#hasLogin_System -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/NetworkSecurity#hasLogin_System">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#isLogin_System_Of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/NetworkSecurity#Login_System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#isEncryption_And_Cryptography_Of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/NetworkSecurity#isEncryption_And_Cryptography_Of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/NetworkSecurity#Encryption_And_Cryptography"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#isInspectionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/NetworkSecurity#isInspectionOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/NetworkSecurity#Inspection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#isLogin_System_Of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/NetworkSecurity#isLogin_System_Of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/NetworkSecurity#Login_System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#hasDeveloper -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/NetworkSecurity#hasDeveloper">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/NetworkSecurity#Login_System"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#hasInventor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/NetworkSecurity#hasInventor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/NetworkSecurity#Encryption_And_Cryptography"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#hasOwner -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/NetworkSecurity#hasOwner">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/NetworkSecurity#hasPrice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#hasVendor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/NetworkSecurity#hasVendor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/NetworkSecurity#Inspection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Anti-virus_Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Anti-virus_Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#Inspection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Biometric_Authentication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Biometric_Authentication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#Login_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Checksum_Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Checksum_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#Encryption_And_Cryptography"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#E-mail_Filter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#E-mail_Filter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#Inspection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Encryption_Algorithms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Encryption_Algorithms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#Encryption_And_Cryptography"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Encryption_And_Cryptography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Encryption_And_Cryptography">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/NetworkSecurity#isEncryption_And_Cryptography_Of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/NetworkSecurity#hasInventor"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Firewall_Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Firewall_Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#Inspection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Inspection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Inspection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/NetworkSecurity#isInspectionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/NetworkSecurity#hasVendor"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Intrusion_Detection_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Intrusion_Detection_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#Inspection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Login_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Login_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/NetworkSecurity#isLogin_System_Of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/NetworkSecurity#hasDeveloper"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Network_Security_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Network_Security_System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/NetworkSecurity#hasEncryption_And_Cryptography"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/NetworkSecurity#Encryption_And_Cryptography"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/NetworkSecurity#hasInspection"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/NetworkSecurity#Inspection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/NetworkSecurity#hasLogin_System"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/NetworkSecurity#Login_System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/NetworkSecurity#hasOwner"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/NetworkSecurity#hasPrice"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Signature_Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Signature_Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#Encryption_And_Cryptography"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Single_Sign-on_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Single_Sign-on_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#Login_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Two-factor_Authentication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/NetworkSecurity#Two-factor_Authentication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/NetworkSecurity#Login_System"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#AES -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#AES">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Encryption_Algorithms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Avast_Antivirus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Avast_Antivirus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Anti-virus_Software"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Cisco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Cisco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+        <hasEncryption_And_Cryptography rdf:resource="http://www.semanticweb.org/NetworkSecurity#MD5"/>
+        <hasEncryption_And_Cryptography rdf:resource="http://www.semanticweb.org/NetworkSecurity#Position-dependent_Checksum_Algorithm"/>
+        <hasEncryption_And_Cryptography rdf:resource="http://www.semanticweb.org/NetworkSecurity#Rapid_Digital_Signature_Algorithm"/>
+        <hasInspection rdf:resource="http://www.semanticweb.org/NetworkSecurity#Avast_Antivirus"/>
+        <hasInspection rdf:resource="http://www.semanticweb.org/NetworkSecurity#Cisco_Firewall"/>
+        <hasInspection rdf:resource="http://www.semanticweb.org/NetworkSecurity#Cisco_IDS"/>
+        <hasLogin_System rdf:resource="http://www.semanticweb.org/NetworkSecurity#OneLogin"/>
+        <hasOwner>Leonard Bosack</hasOwner>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10000.0</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Cisco_Firewall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Cisco_Firewall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Firewall_Software"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Cisco_IDS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Cisco_IDS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Intrusion_Detection_System"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Fingerprint_Recognition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Fingerprint_Recognition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Biometric_Authentication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Gmail_Filter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Gmail_Filter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#E-mail_Filter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Google -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Google">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+        <hasEncryption_And_Cryptography rdf:resource="http://www.semanticweb.org/NetworkSecurity#Modular_sum_Checksum_Algorithm"/>
+        <hasEncryption_And_Cryptography rdf:resource="http://www.semanticweb.org/NetworkSecurity#Rabin_Signature"/>
+        <hasInspection rdf:resource="http://www.semanticweb.org/NetworkSecurity#Gmail_Filter"/>
+        <hasInspection rdf:resource="http://www.semanticweb.org/NetworkSecurity#SolarWinds_Intrusion_Detection_System"/>
+        <hasLogin_System rdf:resource="http://www.semanticweb.org/NetworkSecurity#Google_Authenticator"/>
+        <hasLogin_System rdf:resource="http://www.semanticweb.org/NetworkSecurity#Iris_Recognition"/>
+        <hasLogin_System rdf:resource="http://www.semanticweb.org/NetworkSecurity#OneLogin"/>
+        <hasOwner>Larry Page</hasOwner>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Google_Authenticator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Google_Authenticator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Two-factor_Authentication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Iris_Recognition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Iris_Recognition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Biometric_Authentication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#MD5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#MD5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Encryption_Algorithms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#MS_Mail_Filter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#MS_Mail_Filter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#E-mail_Filter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Microsoft_Azure_Active_Directory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Microsoft_Azure_Active_Directory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Single_Sign-on_System"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Microsoft_Two-Step_Verification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Microsoft_Two-Step_Verification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Two-factor_Authentication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Microsoft_Windows_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Microsoft_Windows_10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Network_Security_System"/>
+        <hasEncryption_And_Cryptography rdf:resource="http://www.semanticweb.org/NetworkSecurity#AES"/>
+        <hasInspection rdf:resource="http://www.semanticweb.org/NetworkSecurity#MS_Mail_Filter"/>
+        <hasInspection rdf:resource="http://www.semanticweb.org/NetworkSecurity#Security_Essentials"/>
+        <hasInspection rdf:resource="http://www.semanticweb.org/NetworkSecurity#Windows_Firewall"/>
+        <hasLogin_System rdf:resource="http://www.semanticweb.org/NetworkSecurity#Fingerprint_Recognition"/>
+        <hasLogin_System rdf:resource="http://www.semanticweb.org/NetworkSecurity#Microsoft_Azure_Active_Directory"/>
+        <hasLogin_System rdf:resource="http://www.semanticweb.org/NetworkSecurity#Microsoft_Two-Step_Verification"/>
+        <hasOwner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BillGates</hasOwner>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.0</hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Modular_sum_Checksum_Algorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Modular_sum_Checksum_Algorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Checksum_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#OneLogin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#OneLogin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Single_Sign-on_System"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Position-dependent_Checksum_Algorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Position-dependent_Checksum_Algorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Checksum_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Rabin_Signature -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Rabin_Signature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Signature_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Rapid_Digital_Signature_Algorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Rapid_Digital_Signature_Algorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Signature_Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Security_Essentials -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Security_Essentials">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Anti-virus_Software"/>
+        <hasInspection rdf:resource="http://www.semanticweb.org/NetworkSecurity#Avast_Antivirus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#SolarWinds_Intrusion_Detection_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#SolarWinds_Intrusion_Detection_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Intrusion_Detection_System"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/NetworkSecurity#Windows_Firewall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/NetworkSecurity#Windows_Firewall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/NetworkSecurity#Firewall_Software"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#AES"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#MD5"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Avast_Antivirus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Security_Essentials"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Cisco"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Google"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Cisco"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Microsoft_Windows_10"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Cisco_Firewall"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Windows_Firewall"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Cisco_IDS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#SolarWinds_Intrusion_Detection_System"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Fingerprint_Recognition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Iris_Recognition"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Gmail_Filter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#MS_Mail_Filter"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Google"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Microsoft_Windows_10"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Google_Authenticator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Microsoft_Two-Step_Verification"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Microsoft_Azure_Active_Directory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#OneLogin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Modular_sum_Checksum_Algorithm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Position-dependent_Checksum_Algorithm"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Rabin_Signature"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/NetworkSecurity#Rapid_Digital_Signature_Algorithm"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
